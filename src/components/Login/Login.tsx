@@ -83,7 +83,7 @@ const Login = () => {
                 className="p-3 mt-2 rounded"
               />
             </div>
-            <div className="fields my-4 flex border-2 rounded p-2 border-white " onClick={handleGoogleLogin}>
+            <div className="fields my-4 flex border-2 rounded p-2 border-white cursor-pointer" onClick={handleGoogleLogin}>
               <img src={GoogleLogo} alt="" />
               <p className="text-white ml-2">Sign Up with Google</p>
             </div>
