@@ -1,8 +1,7 @@
 import { GetProp, Table, TablePaginationConfig, TableProps } from 'antd'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { IoMdShare } from 'react-icons/io';
 import { RiDeleteBin6Line } from 'react-icons/ri';
-
 
 //data for table
 const dataSource = [
@@ -151,6 +150,17 @@ interface TableParams {
     sortOrder?: string;
     filters?: Parameters<GetProp<TableProps, "onChange">>[1];
   }
+  interface DataType {
+    // Define the properties of DataType here
+    key: string;
+    assessmentName: string;
+    type: string;
+    numberOfSuppliers: number;
+    score: number;
+    riskSatisfaction: string;
+    result: string;
+    status: string;
+  }
 
 //columns
 const columns = [
@@ -234,13 +244,18 @@ const columns = [
   ];
 const DataEntry = () => {
     const [data, setData] = useState<DataType[]>();
-    const [loading, setLoading] = useState(false);
+    const loading = false;
     const [tableParams, setTableParams] = useState<TableParams>({
       pagination: {
         current: 1,
         pageSize: 5,
       },
     });
+
+ 
+  
+    
+
     const handleTableChange: TableProps["onChange"] = (
         pagination,
         filters,
@@ -256,16 +271,17 @@ const DataEntry = () => {
         if (pagination.pageSize !== tableParams.pagination?.pageSize) {
           setData([]);
         }
+        console.log(data);
+        
       };
   return (
     <div>
-       <Table
+       <Table <DataType>
                 dataSource={dataSource}
                 columns={columns}
                 pagination={tableParams.pagination}
                 loading={loading}
                 onChange={handleTableChange}
-                rowSelection={Selection}
                 className="mt-6"
               />
     </div>
