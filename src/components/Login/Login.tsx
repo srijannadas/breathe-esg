@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AuthError, getAuth, signInWithEmailAndPassword,signInWithPopup, GoogleAuthProvider  } from "firebase/auth";
 import Logo from "../../assets/Logo_horizontal 1.png";
 import SignUpImg from "../../assets/image 6.png";
