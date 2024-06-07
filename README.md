@@ -1,30 +1,72 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Breathe ESE App ✨
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Breathe ESG is an impact tech SaaS company with a mission to make the transition to a
+sustainable planet more accessible, affordable and efficient and is led by serial entrepreneurs,
+Shaayak and Karan - they enjoy building people and have a diverse and strong professional
+footprint spanning 5+ years.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Problem Statement <br/>
+-  Design signup and login page (design login page best to your creativity)
+- Use APIs from firebase or localhost.
+- Implement JWT authentication( sign up,login, logout etc.) or sign in with google or
+github.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- vite.js
+- ReactJS
+- TypeScript
+- SCSS
+- Firebase
+- Ant Design Components
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Prerequisites
+
+Make sure you have the following installed on your system:
+
+- [NodeJS](https://nodejs.org)
+- [VS Code](https://code.visualstudio.com)
+- Browser
+
+### Installation
+
+1. Clone this repository to your local machine using the following command:
+   ```bash
+   git clone https://github.com/srijannadas/breathe-esg.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd breathe-esg
+   ```
+3. Install Requried Packages:
+   ```bash
+   npm install
+   ```
+
+### Usage
+
+Once you have installed the necessary prerequisites, follow these steps to run the assessment:
+
+Run The Project:
+   ```bash
+   npm run dev
+   ```
+
+## Features
+
+The assessment consists of the following features:
+
+- email & password signup/login.
+- sign in with google functionality.
+- sidebar expandable & collapsable. 
+- select all row functionality in table.
+- pagination in table.
+
+---
+
+Made With ❤️ by [Srijanna Das](https://www.linkedin.com/in/srijanna-das-1705641b8/)
